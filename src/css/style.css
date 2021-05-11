@@ -42,3 +42,104 @@ body {
   border: 0;
   color: #fff;
 }
+
+.cards-section {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card {
+  width: 253px;
+  height: 204px;
+  background: #2f283e;
+  border-radius: 13px;
+  position: relative;
+}
+
+.card .circle {
+  width: 57px;
+  height: 57px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -23.5px;
+  left: calc(50% - 27.5px);
+}
+
+.card:nth-child(1) .circle {
+  background-color: #ffa31a;
+  border: 3px solid #f88214;
+}
+
+.card:nth-child(2) .circle {
+  background-color: #ed27e5;
+  border: 3px solid #9a0694;
+}
+
+.card:nth-child(3) .circle {
+  background-color: #60b7ff;
+  border: 3px solid #4d7bf0;
+}
+
+.card:nth-child(1) svg {
+  width: 35%;
+}
+
+.card:nth-child(2) svg {
+  width: 50%;
+}
+
+.card:nth-child(3) svg {
+  width: 80%;
+}
+
+.card .cripto-info {
+  position: absolute;
+  top: 50px;
+  left: 30px;
+}
+
+.card .cripto-info span {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card .cripto-info h4 {
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.card .price-variant {
+  font-weight: 500;
+  font-size: 12px;
+  position: absolute;
+  top: 40px;
+  right: 5px;
+
+  display: flex;
+  align-items: center;
+}
+
+.card .price-variant svg {
+  width: 15%;
+  margin-right: 0.3rem;
+}
+
+.card .price-variant-down {
+  color: red;
+}
+
+.card .price-variant-down svg {
+  transform: rotate(180deg);
+}
+
+.card .price-variant-down svg path {
+  fill: red;
+}
+
+.card .price-variant-up {
+  color: #43a576;
+}
